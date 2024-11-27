@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Background Melengkung Biru -->
+    <View
+        android:id="@+id/background_curve"
+        android:layout_width="match_parent"
+        android:layout_height="725dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-200dp"
+        android:background="@drawable/curve_background" />
+
+    <!-- LinearLayout untuk Konten (Ikon, Teks, Tombol) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:padding="16dp">
+
+        <!-- Ikon Cuaca -->
+        <ImageView
+            android:id="@+id/weatherIcon"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/weather_icon"
+            android:contentDescription="Weather Icon" />
+
+        <!-- Teks Deskripsi Aplikasi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="EcoActivity: Temukan Aktivitas\nTepat Sesuai Cuaca, Kapan\nSaja, Dimana Saja!"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Tombol Mulai -->
+        <Button
+            android:id="@+id/btnMulai"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/light_blue"
+            android:text="Mulai"
+            android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

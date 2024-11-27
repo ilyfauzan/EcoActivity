@@ -1,0 +1,332 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ADD8E6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="16dp">
+
+        <!-- City Weather Information Section -->
+        <TextView
+            android:id="@+id/cityNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/weatherDetailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:id="@+id/weatherDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/windSpeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <!-- Forecast Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <!-- Row for Current and Next Hours Forecast -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <!-- Now Weather Box -->
+                <LinearLayout
+                    android:id="@+id/nowWeather"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/weather_box">
+
+                    <TextView
+                        android:id="@+id/tvNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Now"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/ivNowIcon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/cloud_icon" />
+
+                    <TextView
+                        android:id="@+id/tvNowTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Next Hour Weather Box -->
+                <LinearLayout
+                    android:id="@+id/weather11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/weather_box">
+
+                    <TextView
+                        android:id="@+id/tv11Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21:46"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/iv11Icon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/cloud_icon" />
+
+                    <TextView
+                        android:id="@+id/tv11Temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Hour After Next Weather Box -->
+                <LinearLayout
+                    android:id="@+id/weather12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/weather_box">
+
+                    <TextView
+                        android:id="@+id/tv12Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22:46"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/iv12Icon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/cloud_icon" />
+
+                    <TextView
+                        android:id="@+id/tv12Temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row for Forecast Days -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Today Weather Box -->
+                <LinearLayout
+                    android:id="@+id/weatherToday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/weather_box">
+
+                    <TextView
+                        android:id="@+id/tvTodayTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Now"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/ivTodayIcon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/cloud_icon" />
+
+                    <TextView
+                        android:id="@+id/tvTodayTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Tomorrow Weather Box -->
+                <LinearLayout
+                    android:id="@+id/weatherTomorrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/weather_box">
+
+                    <TextView
+                        android:id="@+id/tvTomorrowTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saturday"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/ivTomorrowIcon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/cloud_icon" />
+
+                    <TextView
+                        android:id="@+id/tvTomorrowTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Day After Tomorrow Weather Box -->
+                <LinearLayout
+                    android:id="@+id/weatherDayAfterTomorrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/weather_box">
+
+                    <TextView
+                        android:id="@+id/tvDayAfterTomorrowTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/ivDayAfterTomorrowIcon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/cloud_icon" />
+
+                    <TextView
+                        android:id="@+id/tvDayAfterTomorrowTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:gravity="center" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/GoActivityBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/light_blue"
+            android:text="Go To Activity"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ADD8E6"
+    android:gravity="start">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_arrow_left_24"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/formTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form User"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/namaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"
+        android:gravity="start"
+        android:layout_gravity="start"/>
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_box"
+        android:gravity="start"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/umurLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umur"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"
+        android:gravity="start"
+        android:layout_gravity="start"/>
+
+    <EditText
+        android:id="@+id/ageInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_box"
+        android:padding="12dp"
+        android:gravity="start"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/kondisiLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kondisi User Saat ini"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"
+        android:gravity="start"
+        android:layout_gravity="start"/>
+
+    <!-- Menggunakan Spinner untuk kondisi user -->
+    <Spinner
+        android:id="@+id/kondisiInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_box"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"
+        android:gravity="start"
+        android:layout_gravity="start"/>
+
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki - Laki" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/PredictButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prediksi Kegiatan"
+        android:textAlignment="center"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

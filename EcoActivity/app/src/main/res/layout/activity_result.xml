@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ADD8E6">
+
+    <TextView
+        android:id="@+id/tvPredictionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Teks personalisasi -->
+    <TextView
+        android:id="@+id/tvPersonalizedMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"
+        android:text="Hai [Nama], berikut adalah rekomendasi aktivitas untuk Anda." />
+
+    <ImageView
+        android:id="@+id/imgNothing"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/nothing"
+        android:layout_below="@id/tvPersonalizedMessage"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="8dp" /> <!-- Atur radius sudut di sini -->
+    <solid android:color="#DDF7FF" /> <!-- Warna latar belakang -->
+</shape>

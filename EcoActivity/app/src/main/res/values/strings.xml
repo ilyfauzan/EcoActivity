@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EcoActivity</string>
+    <string-array name="kondisi_array">
+        <item>Pilih Kondisi</item>
+        <item>Sehat</item>
+        <item>Sakit</item>
+    </string-array>
+</resources>

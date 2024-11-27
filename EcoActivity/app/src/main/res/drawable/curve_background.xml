@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#002366"/> <!-- Warna Biru Tua -->
+    <corners android:topLeftRadius="1dp"
+        android:topRightRadius="300dp"/> <!-- Radius lebih besar -->
+</shape>
